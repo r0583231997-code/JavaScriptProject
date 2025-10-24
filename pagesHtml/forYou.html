@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הגדרות בהתאמה אישית</title>
+    <link href="../fonts/Roboto-Black.ttf" rel="stylesheet">
+    <link href="../fonts/Roboto-Italic.ttf" rel="stylesheet">
+    <link href="../fonts/Roboto_SemiCondensed-BlackItalic.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="../pagesCss/forYou.css">
+    <link rel="icon" type="image/x-icon" href="../pics/home/הורדה.png">
+</head>
+
+<body>
+    <article id="all">
+        <div>
+            <label >צבע רקע</label>
+            <div id="c"></div>
+            <input name="color" type="radio" id="rgba(209, 217, 230, 0.65)" onchange="changeBackColor(id)">
+            <input name="color" type="radio" id="rgba(228, 255, 255, 0.865)" onchange="changeBackColor(id)">
+            <input name="color" type="radio" id="#000000" onchange="changeBackColor(id)">
+        </div>
+        <div>
+            <label id="c2">צבע כיתוב</label><br><br>
+            <input name="fontColor" type="radio" id="rgb(209, 230, 249)" onchange="fontColor(id)">
+            <input name="fontColor" type="radio" id="rgb(245, 249, 209)" onchange="fontColor(id)">
+            <input name="fontColor" type="radio" id="rgb(64, 109, 75)" onchange="fontColor(id)">
+        </div>
+        <div>
+            <label id="font">פונט</label><br><br>
+            <input name="font" type="radio" id="'Roboto', Roboto-Black" onchange="font(id)">
+            <input name="font" type="radio" id="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" onchange="font(id)">
+            <input name="font" type="radio" id="Arial, Helvetica, sans-seri" onchange="font(id)">
+        </div>
+        <button onclick="save()">אישור</button>
+    </article>
+    
+    <script src="../pagesJs/forYou.js"></script>
+</body>
+
+</html>

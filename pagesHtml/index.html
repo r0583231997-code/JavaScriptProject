@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaBella</title>
+    <link href="../fonts/Roboto-Black.ttf" rel="stylesheet">
+    <link href="../fonts/Roboto-Italic.ttf" rel="stylesheet">
+    <link href="../fonts/Roboto_SemiCondensed-BlackItalic.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="../pagesCss/index.css">
+    <link rel="stylesheet" href="../pagesCss/products.css">
+    <link rel="stylesheet" href="../pagesCss/product.css">
+    <link rel="stylesheet" href="../pagesCss/n.css">
+    <link rel="stylesheet" href="../pagesCss/singel.css">
+    <link rel="stylesheet" href="../pagesCss/forYou.css">
+    <link rel="icon" type="image/x-icon" href="../pics/home/הורדה.png">
+</head>
+
+<body onload="picH()">
+    <nav id="navv">
+        <img src="../pics/home/yellow_logo-02_1.jpg" id="logo">
+        <div id="menue">
+            <a href="../pagesHtml/index.html" id="home">דף הבית</a>
+            <a onclick="movePage('1')">ארוח והגשה</a>
+            <a onclick="movePage('2')">מטבח</a>
+            <a onclick="movePage('3')">חדרי שינה</a>
+            <a onclick="allProducts()">כל המוצרים</a>
+            <a onclick="sale()">sale</a>
+            <!-- <a>Best sellers</a> -->
+
+            <a href="../pagesHtml/login.html" id="enter">כניסה</a>
+        </div>
+        <p id="helo"> שלום ל</p>
+        <div id="i-con">
+            <!-- אחרי שיהיה עוד איקונים צריך לשנות את הגדלים שיהיה מתאים... -->
+            <a href="../pagesHtml/login.html"><img src="../pics/home/הגדרות אישיות.webp" class="ic"></a>
+            <a href="../pagesHtml/forYou.html"><img src="../pics/home/מכחול.webp" class="ic"></a>
+            <a onclick="getCart()"><img src="../pics/home/עגלה שחורה יפה.webp" class="ic"></a>
+        </div>
+    </nav>
+    <header>
+        
+    </header>
+    <aside id="general">
+        <article>
+            <img src="../pics/home/30 אחוז מעוצב.png" id="sale1">
+            <section>
+                <img id="pic1" src="../pics/hover/1.png" class="hover">
+            </section>
+        </article>
+       
+       
+        <div id="allSale">
+            <!-- <p id="textSale">sale   sale   sale   sale   sale   sale   sale   sale   sale   sale   sale   sale</p><br> -->
+            <div id="inSale" hidden></div>
+        </div>
+        <div id="pic6070"> 
+            <img src="../pics/picSale/1.png" id="spaceilSale" class="p">
+        </div>
+        <div>
+            <img src="../pics/home/מפה.png" id="map">
+        </div>
+
+        <div id="end-i-con">
+            <img src="../pics/home/כמעט תחתית.png" id="ditel">
+        </div>
+        <footer>
+            <img src="../pics/home/תחתית של כאזה בלה.png" id="footer">
+        </footer>
+    </aside>
+    <span id="productAlert" hidden>המוצר נוסף לסל</span>
+    <script src="../pagesJs/Data.js"></script>
+    <script src="../pagesJs/index.js"></script>
+    <script src="../pagesJs/login.js"></script>
+    <script src="../pagesJs/products.js"></script>
+    <script src="../pagesJs/cart.js"></script>
+    <script src="../pagesJs/forYou.js"></script>
+    <script src="../pagesJs/quantity.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רישום וכניסה</title>
+    <link rel="stylesheet" href="../pagesCss/login.css">
+    <link rel="icon" type="image/x-icon" href="../pics/home/הורדה.png">
+</head>
+<body>
+
+    
+    <div>
+    <canvas id="gradient-canvas" class="bg" data-js-darken-top data-transition-in>
+    </canvas>
+    <div class="main">
+    
+        <!-- Sign-Up Container -->
+        <div class="container sign-up-container is-hidden" id="sign-up-container">
+            <form class="form" id="sign-up-form" action="../pagesHtml/index.html" method="GET" target="_blank" onsubmit="login()">
+                <h2 class="form_title title">לקוחה חדשה</h2>
+                <input class="form__input" type="text" placeholder="Name" pattern="[^0-9]*" required onchange="saveName()">
+                <input class="form__input" type="email" placeholder="Email"  pattern="[a-zA-Z\.\d'-]+@(gmail.com|co.il|[a-zA-Z]+.net)">
+                <input class="form__input" type="password" placeholder="Password" pattern="[\d=0-9]*">
+                <button class="form__button button submit" type="submit" >אישור</button>
+            </form>
+        </div>
+    
+        <!-- Login Container -->
+        <div class="container login-container" id="login-container">
+            <form class="form" id="login-form" action="../pagesHtml/index.html" method="GET" target="_blank" onsubmit="enter()">
+                <h2 class="form_title title"> כניסה</h2>
+                <input class="form__input" type="email" placeholder="Email" pattern="[a-zA-Z\.\d'-]+@(gmail.com|co.il|[a-zA-Z]+.net)" required>
+                <input class="form__input" type="password" placeholder="Password" pattern="[\d=0-9]*">
+                <button class="form__button button submit" type="submit" >כניסה לחשבון</button>
+            </form>
+        </div>
+    
+        <!-- Switch Container -->
+        <div class="switch" id="switch-container">
+    
+            <!-- Decorative Circles -->
+            <div class="switch__circle"></div>
+            <div class="switch__circle switch__circle--t"></div>
+    
+            <!-- Switch to Login -->
+            <div class="switch__container is-hidden" id="switch-login">
+                <h2 class="switch__title title"> רישום</h2>
+                <p class="switch__description description">
+                    .כדי להרשם הכניסי שם מייל וסיסמה
+                </p>
+                <button class="switch__button button switch-btn" id="login-btn">כניסה לחשבון קיים</button>
+            </div>
+    
+            <!-- Switch to Sign Up -->
+            <div class="switch__container" id="switch-sign-up">
+                <h2 class="switch__title title">מחוברת</h2>
+                <p class="switch__description description">
+                    !את כבר איתנו? הקישי מייל וסיסמה וכנסי לחשבון
+                </p>
+                <button class="switch__button button switch-btn" id="signup-btn">להרשמה</button>
+            </div>
+    
+        </div>
+    
+    </div>
+</div>
+    <script src="../pagesJs/login.js"></script>
+    <!-- <script src="../js/nav.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../pagesCss/index.css">
+    <link rel="stylesheet" href="../pagesCss/products.css">
+       <!-- הוספת איקון בדפדפן -->
+       <link rel="icon" type="image/x-icon" href="../pics/home/הורדה.png">
+</head>
+<body onload="products()">
+    <nav>
+        <img src="../pics/home/yellow_logo-02_1.jpg" id="logo">
+        <div id="menue">
+            <a href="../pagesHtml/index.html" id="home">דף הבית</a>
+            <a onclick="movePage('1')">ארוח והגשה</a>
+            <a onclick="movePage('2')">מטבח</a>
+            <a onclick="movePage('3')">חדרי שינה</a>
+            <a onclick="movePage('4')"> חדרי רחצה</a>
+            <a>כל המוצרים</a>
+            <a>sale</a>
+            <a>Best sellers</a>
+            <a href="../pagesHtml/login.html" id="enter">כניסה</a>
+        </div>
+        <p id="helo">שלום ל</p>
+        <div id="i-con">
+            <!-- אחרי שיהיה עוד איקונים צריך לשנות את הגדלים שיהיה מתאים... -->
+            <a><img src="../pics/home/עגלה לבנה.png" class="ic"></a>
+            <a><img src="../pics/home/עגלה לבנה.png" class="ic"></a>
+            <a><img src="../pics/home/עגלה לבנה.png" class="ic"></a>
+        </div>
+    </nav>
+    <header></header>
+    <script src="../pagesJs/products.js"></script>
+    <script src="../pagesJs/index.js"></script>
+</body>
+</html>

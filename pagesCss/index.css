@@ -1,0 +1,318 @@
+body {
+    direction: rtl;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0%;
+    
+    /* margin-left: 0.5%;
+    margin-right: 0.5%; */
+    /* margin-top: 0.2%; */
+    /* color: brown; */
+}
+#home{
+    text-decoration: none;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(255, 255, 255);
+}
+/* עוטף התפריט */
+nav {
+    /* margin: 2%; */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* margin-bottom: 1%; */
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+#helo{
+    color: white;
+    font-size: x-large;
+
+}
+/*קישורי תפריט */
+#menue {
+    /* margin-top: 1%; */
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+#logo{
+    width: 16vh;
+    height: 9vh;
+}
+/* איקונים */
+#i-con {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin: 5px;
+}
+.ic{
+    width: 6vh;
+    height: 6vh;
+
+}
+/* ---------------- */
+/* nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+  
+ /* nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+  
+  /* nav a:hover {
+    background: #ddd;
+    color: black;
+  } */
+
+/* -------------- */
+
+article {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin:-2%;  */
+    height: 60vh;
+  
+
+}
+#sale2{
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    height: 10vh;
+    /* width: 60vh; */
+    /* border-radius:20px ; */
+    /* border: 12px,solid , red; */
+    /* margin-top: 5%;  */
+   
+}
+#sale1{
+    height: 80%;
+    width: 40%;
+    margin-top: 5%;
+}
+/* כיתוב מבצע */
+#textSale{
+/* color: rgb(78, 71, 64); */
+/* font-family: Arial, Helvetica, sans-serif; */
+font-size: 40px;
+}
+#allSale{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+#pic1{
+    height: 60vh;
+    width: 100%;
+    margin-top: -2%;
+    margin-left: 0%;
+
+    /* height: 10; */
+    /* border-top: 80px rgb(255, 230, 252) double;
+    border-right: 40px rgb(250, 195, 244) double; */
+    /* display: flex;
+    align-items: flex-end; */
+}
+#summer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background-image: url(../pics/hover/1.png);
+    height: 50vh;
+}
+.p{
+    width: 100%;
+    height: 45vh;
+}
+.hover{
+    margin-left: 0px;
+    width: 100vh;
+   
+    /* border: 8px,solid,rgba(111, 104, 104, 0.442); */
+}
+#inSale{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(253, 249, 235);
+    /* margin-top: 5px; */
+    margin-top: 7%;
+}
+#SaleP{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(255, 220, 239);
+}
+#saleSpan{
+    font-size: 110px;
+    color: white;
+    margin-bottom: 45%;
+}
+#more{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(230, 255, 242);
+}
+#map{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225, 251, 251);
+}
+#end-i-con{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(255, 227, 227);
+}
+#ditel{
+    width: 100%;
+    height: 30vh;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(188, 239, 222);
+   
+}
+#footer{
+    width: 100%;
+    height: 80vh;
+  
+}
+
+.Iproduct{
+
+    width:12%;
+    border-radius: 5%;
+    margin-right: 70%;
+   margin: 1%;
+   }
+   .Pproduct{
+       font-size: xx-large;
+       /* text-align: center; */
+           /* align-content: space-between; */
+           /* margin-bottom: 15px; */
+       /* margin-top: 10%; */
+       /* margin-bottom: -5%; */
+   }
+   .removeB{
+    width: 15vh;
+    height: 10vh;
+    background-color: #4f474e;
+
+   }
+   .removeB:hover{
+    background-color: #8b8b8b;
+   }
+   .product{
+   display: flex;
+   /* flex-wrap: wrap; */
+   justify-content: space-around;
+   border-bottom:solid 3px  rgba(74, 68, 68, 0.594) ;
+   margin: 10%;
+   margin-bottom: -10%;
+       /* margin-right: 30%; */
+   /* justify-content: center; */
+   
+   /* align-content: center; */
+      width: 100%;
+      /* height: 30vh; */
+      /* align-items: center; */
+   }
+   #alert{
+    position: absolute;
+    color: red;
+    font-size: xx-large;
+   }
+/* --------------------------------------- */
+   /* עיצוב גוף הדף */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+} */
+
+/* עיצוב הניווט */
+ #navv {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* #logo {
+    height: 50px;
+} */
+
+#menue a,#helo {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#menue a:hover {
+    color: #ffc6f4;
+} 
+
+#SaleP {
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: 5px;
+}
+#pay{
+    background-color: rgb(41, 43, 43);
+    width: 40vh;
+}
+#pay:hover{
+    background-color: #575657;
+}
+#productAlert{
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family:  Arial, Helvetica, sans-serif;
+    /* border-bottom: #333; */
+    padding: 5px 70px;
+    font-size: xx-large;
+    z-index: 1000;
+   }
+
+

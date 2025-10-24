@@ -1,0 +1,88 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button to open modal */
+/* .add {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } */
+
+/* .add:hover {
+    background-color: #555;
+  } */
+
+/* Modal Overlay (hidden by default) */
+.singelProduct {
+  /* background-color: aqua; */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* עושה שהכל יהיה שחור */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.singelProduct.open {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.singelProduct.open .modal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Close Button */
+.close-modal-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+  background-color: #555;
+}

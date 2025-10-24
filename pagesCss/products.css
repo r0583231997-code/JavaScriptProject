@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* הדיב שמכיל הכל */
+#articleProducts {
+    margin: 0%;
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+
+}
+
+/* כל דיב  */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+    height: 80vh;
+    justify-content: center;
+    /* background-color: rgba(246, 233, 214, 0.462); */
+    /* border: 4px, solid rgb(0, 0, 0);
+    border-radius: 20px; */
+}
+
+/* כל תמונה */
+.productsImg {
+    width: 100%;
+    height: 75%;
+    align-items: flex-start;
+    border-radius: 20px;
+}
+
+/* דיב קטן שמכיל את הכפתור שם ומחיר */
+.smallD {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+/* שם מוצר */
+.pName {
+    margin: 0%;
+    font-size: xx-large;
+}
+/* מחיר מוצר */
+.pPrice {
+    margin: 2%;
+    font-size: x-large;
+}
+/* תמונת קטגוריה */
+#cataImg{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-right: 13%;
+    border-radius: 20px ;
+    border: 30px,solid,rgba(207, 207, 207, 0.577);
+}
+#cataP{
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin-top: 2%;
+    margin-right: 28%;
+    text-align: center;
+    font-size: 100px;
+}
+button{
+    padding: 10px 20px;
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    color: white;
+
+}
+.add{
+    background-color: #c4b572b6;
+}
+.add:hover{
+    animation: blur 0.4s forwards; letter-spacing: 3px;
+}
+@keyframes blur{
+0%{filter: blur(0); transform: scale(1);}
+50%{filter: blur(3px); transform: scale(1.1);}
+100%{filter: blur(0); transform: scale(1.05); background: #c4b572;}
+}
+#sale{
+    text-align: center;
+    font-size: 400px;
+    color: black;
+    margin: 0%;
+}
+#casaBella{
+    text-align: center;
+    font-size: 330px;
+    color: black;
+    margin: 0%; 
+}
+.m{
+    background-color: #c4b572;
+    width: 200px;
+}
+/* הדיב שיכיל תמונה וכו לכל מוצר בנפרד */
+.modal-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 60vh;
+}
+/* התמונה הבודדת */
+.singelImg{
+    width: 50%;
+    height: 40vh;
+}

@@ -1,0 +1,93 @@
+.singelProduct {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* הגדלת רוחב עמודת התמונה */
+    grid-template-rows: auto auto auto; /* שורות עבור שם, מחיר ופרטים */
+    gap: 16px; /* הגדלת רווח בין האלמנטים */
+    align-items: start; /* מיישר את האלמנטים בחלק העליון */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* עיגול פינות גדול יותר */
+    padding: 16px; /* הגדלת רווח פנימי */
+    margin: 16px; /* הגדלת רווח חיצוני */
+    width: 600px; /* הגדלת רוחב ה-div */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* הגדלת הצל */
+}
+
+.singelImg {
+    width: 400px; /* גובה קבוע לכל התמונות */
+    height: 400px; /* גובה קבוע לכל התמונות */
+    object-fit: cover; /* שומר על יחס הגובה והרחב */
+    border-radius: 10px; /* עיגול פינות גדול יותר */
+    grid-column: 2; /* התמונה בעמודה השנייה */
+    display: block; /* מאפשר מרכז את התמונה */
+    margin: 0 auto; /* מרכז את התמונה */
+
+
+}
+
+.productDetails {
+    grid-column: 1; /* פרטי המוצר בעמודה הראשונה */
+}
+
+.quantity-control {
+    grid-column: 1; /* בקרת כמות בעמודה הראשונה */
+    display: flex;
+    align-items: center;
+    margin-top: 12px; /* הגדלת רווח מעל */
+}
+
+.add {
+    grid-column: 1; /* כפתור הוספה לסל בעמודה הראשונה */
+    background-color: #c4b572b6;
+    color: white;
+    border: none;
+    padding: 12px 18px; /* הגדלת גודל הכפתור */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px; /* רווח מעל כפתור ההוספה */
+    width: 100%; /* כפתור יתפוס את כל רוחב העמודה */
+}
+
+/* .add:hover {
+    background-color: #219150;
+} */
+.productPrice {
+    font-size: 24px; /* הגדלת גודל הטקסט של המחיר */
+    text-align: center; /* מרכז את המחיר */
+    margin: 20px 0; /* רווח מעל ומתחת */
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center; /* מרכז את בקרת הכמות */
+    align-items: center; /* מיישר את האלמנטים באמצע */
+    margin-top: 12px; /* רווח מעל */
+}
+
+.quantity-input {
+    width: 50px; /* גודל קבוע לשדה הכמות */
+    text-align: center; /* מרכז את הטקסט בשדה */
+    margin: 0 10px; /* רווח בין הכפתורים לשדה */
+}
+
+.add {
+    background-color: #c4b572b6;
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    border: none;
+    padding: 12px 18px; /* גודל הכפתור */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.productContainer {
+    text-align: center; /* מרכז את כל הטקסט בתוך הקונטיינר */
+}
+
+.productName {
+    font-size: 20px; /* גודל טקסט לשם */
+    margin: 10px 0; /* רווח מעל ומתחת */
+}
+
+.productPrice {
+    font-size: 24px; /* גודל טקסט למחיר */
+    margin: 10px 0; /* רווח מעל ומתחת */
+}

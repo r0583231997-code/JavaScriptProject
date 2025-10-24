@@ -1,0 +1,23 @@
+
+# תלותיות של Node.js
+node_modules/
+
+# תיקיות בנייה
+/dist/
+/build/
+
+# קבצי לוג
+*.log
+
+# משתני סביבה
+.env
+
+# תיקיות וקבצים של עורך/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# קבצים שנוצרים על ידי מערכת ההפעלה
+.DS_Store
+Thumbs.db
